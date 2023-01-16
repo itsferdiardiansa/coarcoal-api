@@ -7,27 +7,27 @@ export class TechStackResolver {
     return [
       {
         name: 'Typescript',
-        url: 'http://',
+        url: 'https://www.typescriptlang.org/',
         level: 'STRONG'
       },
       {
         name: 'Javascript',
-        url: 'http://',
+        url: 'https://www.javascript.com/',
         level: 'STRONG'
       },
       {
         name: 'React',
-        url: 'http://',
+        url: 'https://reactjs.org/',
         level: 'STRONG'
       },
       {
         name: 'Vue',
-        url: 'http://',
+        url: 'https://vuejs.org/',
         level: 'STRONG'
       },
       {
         name: 'SQL',
-        url: 'http://',
+        url: 'https://www.mysql.com',
         lavel: 'MID'
       }
     ]

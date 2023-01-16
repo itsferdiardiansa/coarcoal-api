@@ -14,11 +14,11 @@ export class ExperienceResolver {
       },
       {
         company: 'Upwork',
-        years: 'Feb 2018 - Okt 2018'
+        years: 'Mar 2018 - Sep 2018'
       },
       {
-        company: 'Nusantara Technology',
-        years: 'Sep 2016 - Dec 2017'
+        company: 'Nusantara Technology (Keepo.me)',
+        years: 'Oct 2016 - Dec 2017'
       }
     ]
   }

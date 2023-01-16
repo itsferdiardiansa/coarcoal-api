@@ -1,8 +1,8 @@
 {
   "name": "coarcoal-api",
   "version": "0.0.1",
-  "description": "",
-  "author": "",
+  "description": "About Me",
+  "author": "Ferdi Ardiansa",
   "private": true,
   "license": "UNLICENSED",
   "scripts": {

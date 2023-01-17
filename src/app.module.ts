@@ -7,6 +7,7 @@ import { AboutMeModule } from './about-me/about-me.module'
 import { ExperienceModule } from './experience/experience.module'
 import { TechStackModule } from './tech-stack/tech-stack.module';
 import { LinksModule } from './links/links.module';
+import { IntroductionModule } from './introduction/introduction.module';
 
 @Module({
   imports: [
@@ -22,7 +23,8 @@ import { LinksModule } from './links/links.module';
     AboutMeModule,
     ExperienceModule,
     TechStackModule,
-    LinksModule
+    LinksModule,
+    IntroductionModule
   ],
   controllers: [],
   providers: [AppService],

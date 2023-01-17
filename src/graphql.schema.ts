@@ -23,6 +23,8 @@ export abstract class IQuery {
 
     abstract experience(): Nullable<Experience[]> | Promise<Nullable<Experience[]>>;
 
+    abstract introduction(): Nullable<Introdcution> | Promise<Nullable<Introdcution>>;
+
     abstract links(): Nullable<Nullable<Links>[]> | Promise<Nullable<Nullable<Links>[]>>;
 
     abstract techStacks(): Nullable<Tech[]> | Promise<Nullable<Tech[]>>;
@@ -34,6 +36,11 @@ export class Experience {
     location?: Nullable<string>;
     icon?: Nullable<string>;
     techStacks?: Nullable<Nullable<string>[]>;
+}
+
+export class Introdcution {
+    title?: Nullable<string>;
+    description?: Nullable<string>;
 }
 
 export class Links {

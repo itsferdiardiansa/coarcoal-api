@@ -7,27 +7,38 @@ export class TechStackResolver {
     return [
       {
         name: 'Typescript',
-        url: 'https://www.typescriptlang.org/',
-        level: 'STRONG'
+        url: '//www.typescriptlang.org/',
+        icon: '//res.cloudinary.com/dkp2v9lyz/image/upload/v1673988873/me/tech/typescript-svgrepo-com_renmse.svg',
+        level: 'STRONG',
       },
       {
         name: 'Javascript',
-        url: 'https://www.javascript.com/',
+        url: '//www.javascript.com/',
+        icon: '//res.cloudinary.com/dkp2v9lyz/image/upload/v1673988872/me/tech/javascript-svgrepo-com_zwsrdw.svg',
         level: 'STRONG'
       },
       {
         name: 'React',
-        url: 'https://reactjs.org/',
+        url: '//reactjs.org/',
+        icon: '//res.cloudinary.com/dkp2v9lyz/image/upload/v1673988872/me/tech/react-svgrepo-com_dc7ays.svg',
         level: 'STRONG'
       },
       {
         name: 'Vue',
-        url: 'https://vuejs.org/',
+        url: '//vuejs.org/',
+        icon: '//res.cloudinary.com/dkp2v9lyz/image/upload/v1673988874/me/tech/vue-svgrepo-com_oouwhb.svg',
         level: 'STRONG'
       },
       {
+        name: 'Node',
+        url: '//nodejs.org/',
+        icon: '//res.cloudinary.com/dkp2v9lyz/image/upload/v1673988872/me/tech/node-fill-svgrepo-com_rha4sc.svg',
+        level: 'MID'
+      },
+      {
         name: 'SQL',
-        url: 'https://www.mysql.com',
+        url: '//www.mysql.com',
+        icon: '//res.cloudinary.com/dkp2v9lyz/image/upload/v1673988872/me/tech/sql-svgrepo-com_kl1ifd.svg',
         lavel: 'MID'
       }
     ]

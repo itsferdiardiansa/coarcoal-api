@@ -1,8 +1,7 @@
-type Experience {
-  company: String
-  years: String
+type AboutMe {
+  description: String
 }
 
 type Query {
-  experience: [Experience!]
+  aboutMe: AboutMe
 }

@@ -14,21 +14,23 @@ export enum TechLevel {
     STRONG = "STRONG"
 }
 
-export class Experience {
-    company?: Nullable<string>;
-    years?: Nullable<string>;
+export class AboutMe {
+    description?: Nullable<string>;
 }
 
 export abstract class IQuery {
-    abstract experience(): Nullable<Experience[]> | Promise<Nullable<Experience[]>>;
-
     abstract aboutMe(): Nullable<AboutMe> | Promise<Nullable<AboutMe>>;
+
+    abstract experience(): Nullable<Experience[]> | Promise<Nullable<Experience[]>>;
 
     abstract techStacks(): Nullable<Tech[]> | Promise<Nullable<Tech[]>>;
 }
 
-export class AboutMe {
-    description?: Nullable<string>;
+export class Experience {
+    company?: Nullable<string>;
+    years?: Nullable<string>;
+    location?: Nullable<string>;
+    techStacks?: Nullable<Nullable<string>[]>;
 }
 
 export class Tech {

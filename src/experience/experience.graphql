@@ -1,7 +1,10 @@
-type AboutMe {
-  description: String
+type Experience {
+  company: String
+  years: String
+  location: String
+  techStacks: [String]
 }
 
 type Query {
-  aboutMe: AboutMe
+  experience: [Experience!]
 }

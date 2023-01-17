@@ -39,6 +39,7 @@ module.exports = {
     // this is needed as we assign things from process.env which may be null | undefined | string 
     // and we have explicitly this.configService.get().azure.fileUpload.containerName!
     '@typescript-eslint/no-non-null-assertion': 0,
-    'no-async-promise-executor': 0
+    'no-async-promise-executor': 0,
+    'no-multiple-empty-lines': ["error", { "max": 2, "maxEOF": 1 }]
   },
 };

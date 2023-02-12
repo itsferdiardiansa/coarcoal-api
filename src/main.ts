@@ -9,9 +9,9 @@ async function bootstrap() {
   const app = await NestFactory.create(AppModule)
   await app.listen(3000)
 
-  if (process.env.NODE_ENV === 'production') {
+  // if (process.env.NODE_ENV === 'production') {
     const { schema } = app.get(GraphQLSchemaHost);
     writeFileSync(join(process.cwd(), `/src/schema.graphql`), printSchema(schema));
-  }
+  // }
 }
 bootstrap()

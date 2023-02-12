@@ -11,7 +11,7 @@ async function bootstrap() {
 
   // if (process.env.NODE_ENV === 'production') {
     const { schema } = app.get(GraphQLSchemaHost);
-    writeFileSync(join(process.cwd(), `/src/schema.graphql`), printSchema(schema));
+    writeFileSync(join(process.cwd(), `/dist/schema.graphql`), printSchema(schema));
   // }
 }
 bootstrap()

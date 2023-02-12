@@ -1,0 +1,16 @@
+enum TechLevel {
+  LOW
+  MID
+  STRONG
+}
+
+type Tech {
+  name: String
+  url: String
+  imageUrl: String
+  level: TechLevel
+}
+
+type Query {
+  techStacks: [Tech!]
+}

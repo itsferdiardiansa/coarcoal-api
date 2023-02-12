@@ -1,0 +1,11 @@
+type Experience {
+  company: String
+  years: String
+  location: String
+  icon: String
+  techStacks: [String]
+}
+
+type Query {
+  experience: [Experience!]
+}

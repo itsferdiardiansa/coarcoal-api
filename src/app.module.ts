@@ -1,7 +1,6 @@
 import { join } from 'path'
 import { Module } from '@nestjs/common'
 import { ConfigModule } from '@nestjs/config'
-// import { AppService } from './app.service'
 import { GraphQLModule } from '@nestjs/graphql'
 import { ApolloDriver, ApolloDriverConfig } from '@nestjs/apollo'
 import { AboutMeModule } from './about-me/about-me.module'
@@ -30,7 +29,6 @@ import { IntroductionModule } from './introduction/introduction.module';
     LinksModule,
     IntroductionModule
   ],
-  controllers: [],
-  // providers: [AppService],
+  controllers: []
 })
 export class AppModule {}

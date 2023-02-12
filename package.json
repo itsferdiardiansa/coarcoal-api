@@ -7,7 +7,7 @@
   "license": "UNLICENSED",
   "scripts": {
     "prepare": "husky install && chmod ug+x .husky/*",
-    "build": "nest build",
+    "build": "rm -rf dist && tsc -p tsconfig.build.json && copyfiles -f ./src/**/*.graphql dist/@schema",
     "start": "nest start",
     "start:dev": "nest start --watch",
     "start:debug": "nest start --debug --watch",
@@ -48,6 +48,7 @@
     "@typescript-eslint/eslint-plugin": "^5.0.0",
     "@typescript-eslint/parser": "^5.0.0",
     "commitizen": "^4.2.4",
+    "copyfiles": "^2.4.1",
     "cz-conventional-changelog": "^3.3.0",
     "eslint": "^8.0.1",
     "eslint-config-prettier": "^8.3.0",

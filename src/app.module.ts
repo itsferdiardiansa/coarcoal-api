@@ -14,20 +14,20 @@ import { IntroductionModule } from './introduction/introduction.module';
     ConfigModule.forRoot({
       isGlobal: true
     }),
-    // GraphQLModule.forRoot<ApolloDriverConfig>({
-    //   driver: ApolloDriver,
-    //   playground: true,
-    //   typePaths: ['./**/*.graphql'],
-    //   definitions: {
-    //     path: join(process.cwd(), 'src/graphql.schema.ts'),
-    //     outputAs: 'class'
-    //   }
-    // }),
-    // AboutMeModule,
-    // ExperienceModule,
-    // TechStackModule,
-    // LinksModule,
-    // IntroductionModule
+    GraphQLModule.forRoot<ApolloDriverConfig>({
+      driver: ApolloDriver,
+      playground: true,
+      typePaths: ['./**/*.graphql'],
+      definitions: {
+        path: join(process.cwd(), 'src/graphql.schema.ts'),
+        outputAs: 'class'
+      }
+    }),
+    AboutMeModule,
+    ExperienceModule,
+    TechStackModule,
+    LinksModule,
+    IntroductionModule
   ],
   controllers: []
 })

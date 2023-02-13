@@ -1,0 +1,48 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type AboutMe {
+  description: String!
+}
+
+type Experience {
+  company: String
+  years: String!
+  location: String!
+  icon: String!
+  techStacks: [String!]
+}
+
+type TechStack {
+  name: String!
+  url: String!
+  imageUrl: String
+  level: TechLevel
+}
+
+"""The tech of level!"""
+enum TechLevel {
+  LOW
+  MID
+  STRONG
+}
+
+type Links {
+  name: String!
+  url: String!
+  icon: String!
+}
+
+type Introduction {
+  title: String!
+  description: String!
+}
+
+type Query {
+  aboutMe: AboutMe!
+  experience: [Experience!]!
+  techStacks: [TechStack!]!
+  links: [Links!]!
+  introduction: Introduction!
+}

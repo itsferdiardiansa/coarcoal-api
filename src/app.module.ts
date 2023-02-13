@@ -16,9 +16,9 @@ import { IntroductionModule } from './introduction/introduction.module';
     }),
     GraphQLModule.forRoot<ApolloDriverConfig>({
       driver: ApolloDriver,
-      playground: true,
-      autoSchemaFile: true
-      // autoSchemaFile: join(process.cwd(), '/tmp/schema.gql')
+      playground: process.env.NODE_ENV === 'development',
+      autoSchemaFile: process.env.NODE_ENV === 'development' ? join(process.cwd(), 'src/schema.gql') : true,
+      path: '/gql'
     }),
     AboutMeModule,
     ExperienceModule,

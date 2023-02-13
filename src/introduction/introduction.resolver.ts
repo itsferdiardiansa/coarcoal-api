@@ -1,8 +1,9 @@
-import { Query, Resolver } from '@nestjs/graphql';
+import { Query, Resolver } from '@nestjs/graphql'
+import { Introduction } from './introduction.model'
 
-@Resolver()
+@Resolver(of => Introduction)
 export class IntroductionResolver {
-  @Query()
+  @Query(returns => Introduction)
   introduction() {
     return {
       title: 'Software Engineer - Frontend',

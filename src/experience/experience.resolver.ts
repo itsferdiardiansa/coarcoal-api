@@ -1,7 +1,9 @@
-import { Query } from '@nestjs/graphql'
+import { Query, Resolver } from '@nestjs/graphql'
+import { Experience } from './experience.model'
 
+@Resolver((of) => Experience)
 export class ExperienceResolver {
-  @Query()
+  @Query(returns => [Experience])
   experience() {
     return [
       {

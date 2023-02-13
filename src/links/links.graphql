@@ -1,9 +1,0 @@
-type Links {
-  name: String
-  url: String
-  icon: String
-}
-
-type Query {
-  links: [Links]
-}

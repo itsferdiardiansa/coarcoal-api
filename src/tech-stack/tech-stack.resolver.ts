@@ -1,8 +1,9 @@
-import { Query, Resolver } from '@nestjs/graphql';
+import { Query, Resolver } from '@nestjs/graphql'
+import { TechStack } from './tech-stack.model'
 
-@Resolver()
+@Resolver(of => TechStack)
 export class TechStackResolver {
-  @Query()
+  @Query(returns => [TechStack])
   techStacks() {
     return [
       {
@@ -39,7 +40,7 @@ export class TechStackResolver {
         name: 'SQL',
         url: '//www.mysql.com',
         icon: '//res.cloudinary.com/dkp2v9lyz/image/upload/v1673988872/me/tech/sql-svgrepo-com_kl1ifd.svg',
-        lavel: 'MID'
+        level: 'MID'
       }
     ]
   }

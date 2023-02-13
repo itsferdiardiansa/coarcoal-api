@@ -17,11 +17,7 @@ import { IntroductionModule } from './introduction/introduction.module';
     GraphQLModule.forRoot<ApolloDriverConfig>({
       driver: ApolloDriver,
       playground: true,
-      typePaths: ['./**/*.graphql'],
-      definitions: {
-        path: join(process.cwd(), 'src/graphql.schema.ts'),
-        outputAs: 'class'
-      }
+      autoSchemaFile: join(process.cwd(), 'src/schema.gql')
     }),
     AboutMeModule,
     ExperienceModule,

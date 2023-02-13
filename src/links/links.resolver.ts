@@ -1,8 +1,9 @@
 import { Query, Resolver } from '@nestjs/graphql';
+import { Links } from './links.model'
 
-@Resolver()
+@Resolver(of => Links)
 export class LinksResolver {
-  @Query()
+  @Query(returns => [Links])
   links() {
     return [
       {

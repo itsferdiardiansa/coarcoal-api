@@ -1,8 +1,0 @@
-type Introdcution {
-  title: String
-  description: String
-}
-
-type Query {
-  introduction: Introdcution
-}

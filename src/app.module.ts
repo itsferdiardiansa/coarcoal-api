@@ -3,11 +3,11 @@ import { Module } from '@nestjs/common'
 import { ConfigModule } from '@nestjs/config'
 import { GraphQLModule } from '@nestjs/graphql'
 import { ApolloDriver, ApolloDriverConfig } from '@nestjs/apollo'
-import { AboutMeModule } from './about-me/about-me.module'
+import { AboutMeModule } from './graphql/about-me/about-me.module'
 import { ExperienceModule } from './experience/experience.module'
 import { TechStackModule } from './tech-stack/tech-stack.module';
 import { LinksModule } from './links/links.module';
-import { IntroductionModule } from './introduction/introduction.module';
+import { IntroductionModule } from './graphql/introduction/introduction.module';
 
 @Module({
   imports: [
